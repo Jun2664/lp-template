@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Asana LP クローン
 
-## Getting Started
+Next.js 14 + TypeScript + Tailwind CSS で作成したAsana風のランディングページです。
 
-First, run the development server:
+## 特徴
+
+- 📱 レスポンシブデザイン（390px / 768px / 1280px 対応）
+- 🎨 Asana風のカラーパレット（#3E6CFF, #FFB06B, #FF6BCA）
+- 🔧 TypeScript による型安全性
+- 📖 Storybook による UI コンポーネント管理
+- ⚡ Vercel での簡単デプロイ
+
+## 技術スタック
+
+- **フレームワーク**: Next.js 14 (app Router)
+- **言語**: TypeScript
+- **スタイリング**: Tailwind CSS 3
+- **アイコン**: lucide-react
+- **UI カタログ**: Storybook
+- **デプロイ**: Vercel
+
+## セクション構成
+
+- `hero`: メインビジュアル + CTA
+- `social-proof`: 導入企業ロゴ一覧
+- `features`: 3つの主要機能紹介
+- `workflow`: 3ステップの使い方説明
+- `cta`: 最終アクションセクション
+- `footer`: 簡易フッター
+
+## ローカル環境構築
+
+### 1. 依存関係のインストール
+
+```bash
+npm install
+```
+
+### 2. 開発サーバーの起動
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ブラウザで `http://localhost:3000` にアクセスしてください。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Storybook の起動
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run storybook
+```
 
-## Learn More
+ブラウザで `http://localhost:6006` にアクセスしてください。
 
-To learn more about Next.js, take a look at the following resources:
+## デプロイ手順（Vercel）
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Vercel アカウントの作成
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[Vercel](https://vercel.com) でアカウントを作成します。
 
-## Deploy on Vercel
+### 2. プロジェクトのデプロイ
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Vercel CLI のインストール
+npm install -g vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# プロジェクトのデプロイ
+vercel
+```
+
+または、GitHubリポジトリと連携してVercelダッシュボードからデプロイできます。
+
+## ディレクトリ構成
+
+```
+/
+├── app/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+├── src/
+│   ├── components/
+│   │   ├── Hero.tsx
+│   │   ├── SocialProof.tsx
+│   │   ├── Features.tsx
+│   │   ├── Workflow.tsx
+│   │   ├── CallToAction.tsx
+│   │   ├── Footer.tsx
+│   │   └── LogoCloud.tsx
+│   ├── data/
+│   │   └── features.ts
+│   └── stories/
+│       └── Hero.stories.tsx
+├── .storybook/
+│   ├── main.ts
+│   └── preview.ts
+└── README.md
+```
+
+## カラーパレット
+
+```javascript
+const palette = {
+  primary:  '#3E6CFF',   // Asana系ブルー
+  accent1:  '#FFB06B',   // グラデーション1
+  accent2:  '#FF6BCA',   // グラデーション2
+  grayText: '#687387',   // テキストグレー
+}
+```
+
+## スクリプト
+
+```bash
+# 開発サーバー起動
+npm run dev
+
+# プロダクションビルド
+npm run build
+
+# ビルド後のプレビュー
+npm run start
+
+# Storybook 起動
+npm run storybook
+
+# Storybook ビルド
+npm run build-storybook
+```
+
+## ライセンス
+
+このプロジェクトはMITライセンスの下で公開されています。
+
+## 注意事項
+
+- このプロジェクトは学習・デモ目的で作成されています
+- 画像は Unsplash のプレースホルダーを使用しています
+- 実際のフォーム送信機能は含まれていません（CTA ボタンは mailto: リンクまたはダミーページ）
