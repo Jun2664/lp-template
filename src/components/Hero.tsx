@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 export const Hero: React.FC = () => {
   return (
@@ -25,10 +26,13 @@ export const Hero: React.FC = () => {
           <div className="relative h-[400px] lg:h-[600px]">
             <div className="absolute inset-0 bg-gradient-to-br from-[#FFB06B] to-[#FF6BCA] rounded-3xl opacity-90"></div>
             <div className="absolute inset-4 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop"
                 alt="ダッシュボードのプレビュー"
+                width={800}
+                height={600}
                 className="rounded-xl shadow-2xl max-w-full h-auto"
+                priority
               />
             </div>
           </div>
