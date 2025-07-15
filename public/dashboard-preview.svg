@@ -1,0 +1,91 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f1f5f9;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)"/>
+  
+  <!-- Header -->
+  <rect x="40" y="40" width="720" height="60" rx="8" fill="#3E6CFF" opacity="0.9"/>
+  <circle cx="70" cy="70" r="12" fill="white" opacity="0.8"/>
+  <rect x="100" y="60" width="120" height="20" rx="4" fill="white" opacity="0.6"/>
+  <rect x="600" y="60" width="80" height="20" rx="10" fill="white" opacity="0.4"/>
+  <rect x="700" y="60" width="40" height="20" rx="10" fill="white" opacity="0.4"/>
+  
+  <!-- Sidebar -->
+  <rect x="40" y="120" width="200" height="440" rx="8" fill="url(#cardGradient)" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Sidebar Items -->
+  <rect x="60" y="140" width="160" height="30" rx="4" fill="#3E6CFF" opacity="0.1"/>
+  <rect x="70" y="148" width="60" height="14" rx="2" fill="#3E6CFF" opacity="0.6"/>
+  
+  <rect x="60" y="180" width="160" height="30" rx="4" fill="#64748b" opacity="0.1"/>
+  <rect x="70" y="188" width="80" height="14" rx="2" fill="#64748b" opacity="0.4"/>
+  
+  <rect x="60" y="220" width="160" height="30" rx="4" fill="#64748b" opacity="0.1"/>
+  <rect x="70" y="228" width="70" height="14" rx="2" fill="#64748b" opacity="0.4"/>
+  
+  <!-- Main Content Area -->
+  <rect x="260" y="120" width="500" height="440" rx="8" fill="url(#cardGradient)" stroke="#e2e8f0" stroke-width="1"/>
+  
+  <!-- Stats Cards -->
+  <rect x="280" y="140" width="140" height="80" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="290" y="155" width="40" height="20" rx="4" fill="#10b981" opacity="0.2"/>
+  <rect x="295" y="160" width="30" height="10" rx="2" fill="#10b981"/>
+  <rect x="290" y="185" width="80" height="12" rx="2" fill="#64748b" opacity="0.3"/>
+  <rect x="290" y="200" width="60" height="10" rx="2" fill="#64748b" opacity="0.5"/>
+  
+  <rect x="440" y="140" width="140" height="80" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="450" y="155" width="40" height="20" rx="4" fill="#3b82f6" opacity="0.2"/>
+  <rect x="455" y="160" width="30" height="10" rx="2" fill="#3b82f6"/>
+  <rect x="450" y="185" width="80" height="12" rx="2" fill="#64748b" opacity="0.3"/>
+  <rect x="450" y="200" width="60" height="10" rx="2" fill="#64748b" opacity="0.5"/>
+  
+  <rect x="600" y="140" width="140" height="80" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="610" y="155" width="40" height="20" rx="4" fill="#f59e0b" opacity="0.2"/>
+  <rect x="615" y="160" width="30" height="10" rx="2" fill="#f59e0b"/>
+  <rect x="610" y="185" width="80" height="12" rx="2" fill="#64748b" opacity="0.3"/>
+  <rect x="610" y="200" width="60" height="10" rx="2" fill="#64748b" opacity="0.5"/>
+  
+  <!-- Chart Area -->
+  <rect x="280" y="240" width="460" height="200" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="295" y="255" width="100" height="15" rx="2" fill="#64748b" opacity="0.4"/>
+  
+  <!-- Chart Bars -->
+  <rect x="320" y="300" width="20" height="100" rx="2" fill="#3E6CFF" opacity="0.8"/>
+  <rect x="360" y="320" width="20" height="80" rx="2" fill="#FFB06B" opacity="0.8"/>
+  <rect x="400" y="280" width="20" height="120" rx="2" fill="#FF6BCA" opacity="0.8"/>
+  <rect x="440" y="310" width="20" height="90" rx="2" fill="#3E6CFF" opacity="0.8"/>
+  <rect x="480" y="290" width="20" height="110" rx="2" fill="#FFB06B" opacity="0.8"/>
+  <rect x="520" y="330" width="20" height="70" rx="2" fill="#FF6BCA" opacity="0.8"/>
+  <rect x="560" y="300" width="20" height="100" rx="2" fill="#3E6CFF" opacity="0.8"/>
+  <rect x="600" y="320" width="20" height="80" rx="2" fill="#FFB06B" opacity="0.8"/>
+  <rect x="640" y="310" width="20" height="90" rx="2" fill="#FF6BCA" opacity="0.8"/>
+  <rect x="680" y="290" width="20" height="110" rx="2" fill="#3E6CFF" opacity="0.8"/>
+  
+  <!-- Task List -->
+  <rect x="280" y="460" width="460" height="80" rx="6" fill="white" stroke="#e2e8f0" stroke-width="1"/>
+  <rect x="295" y="475" width="80" height="12" rx="2" fill="#64748b" opacity="0.4"/>
+  
+  <!-- Task Items -->
+  <circle cx="305" cy="495" r="5" fill="#10b981"/>
+  <rect x="320" y="490" width="200" height="10" rx="2" fill="#64748b" opacity="0.3"/>
+  <rect x="600" y="490" width="60" height="10" rx="2" fill="#64748b" opacity="0.2"/>
+  
+  <circle cx="305" cy="515" r="5" fill="#3b82f6"/>
+  <rect x="320" y="510" width="180" height="10" rx="2" fill="#64748b" opacity="0.3"/>
+  <rect x="600" y="510" width="50" height="10" rx="2" fill="#64748b" opacity="0.2"/>
+  
+  <!-- Floating Action Button -->
+  <circle cx="720" cy="520" r="25" fill="#3E6CFF" opacity="0.9"/>
+  <rect x="715" y="515" width="10" height="2" rx="1" fill="white"/>
+  <rect x="718" y="512" width="2" height="10" rx="1" fill="white"/>
+</svg>

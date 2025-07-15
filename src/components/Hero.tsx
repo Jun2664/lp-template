@@ -27,7 +27,7 @@ export const Hero: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#FFB06B] to-[#FF6BCA] rounded-3xl opacity-90"></div>
             <div className="absolute inset-4 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center">
               <Image
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=600&fit=crop"
+                src="/dashboard-preview.svg"
                 alt="ダッシュボードのプレビュー"
                 width={800}
                 height={600}
