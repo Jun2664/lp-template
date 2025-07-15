@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
               チームの仕事を、もっとシンプルに。
             </h1>
             <p className="text-lg md:text-xl text-gray-600">
-              タスク管理からレポートまで。Asana ライクなワークスペースを体験しよう。
+              タスク管理からレポートまで。効率的なワークスペースを体験しよう。
             </p>
             <div className="flex gap-4">
               <a

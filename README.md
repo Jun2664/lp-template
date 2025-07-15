@@ -1,11 +1,11 @@
-# Asana LP クローン
+# プロジェクト管理ツール LP
 
-Next.js 14 + TypeScript + Tailwind CSS で作成したAsana風のランディングページです。
+Next.js 14 + TypeScript + Tailwind CSS で作成したプロジェクト管理ツールのランディングページです。
 
 ## 特徴
 
 - 📱 レスポンシブデザイン（390px / 768px / 1280px 対応）
-- 🎨 Asana風のカラーパレット（#3E6CFF, #FFB06B, #FF6BCA）
+- 🎨 モダンなカラーパレット（#3E6CFF, #FFB06B, #FF6BCA）
 - 🔧 TypeScript による型安全性
 - 📖 Storybook による UI コンポーネント管理
 - ⚡ Vercel での簡単デプロイ
@@ -101,7 +101,7 @@ vercel
 
 ```javascript
 const palette = {
-  primary:  '#3E6CFF',   // Asana系ブルー
+  primary:  '#3E6CFF',   // プライマリーブルー
   accent1:  '#FFB06B',   // グラデーション1
   accent2:  '#FF6BCA',   // グラデーション2
   grayText: '#687387',   // テキストグレー
@@ -134,5 +134,5 @@ npm run build-storybook
 ## 注意事項
 
 - このプロジェクトは学習・デモ目的で作成されています
-- 画像は Unsplash のプレースホルダーを使用しています
+- 画像はオリジナルのSVGプレースホルダーを使用しています
 - 実際のフォーム送信機能は含まれていません（CTA ボタンは mailto: リンクまたはダミーページ）
